@@ -8,8 +8,8 @@ def dana(nom, jml):
 	for x in range(jml):
 		cal = requests.get("https://api.danacita.co.id/users/send_otp/?mobile_phone=0"+nom).text
 		if 'detail' in cal:
-			print(f"{r}[+] {c}Spam ke {k}+62{nom} {c}Berhasil ")
+			print(f"{k}[+] {c}Spam ke {k}+62{nom} {c}Berhasil ")
 			sleep(5)
 		else:
-			print(f"{k}[+] {c}Spam ke {k}+62{nom} {c}Gagal ")
+			print(f"{r}[+] {c}Spam ke {k}+62{nom} {c}Gagal ")
 			sleep(2)
