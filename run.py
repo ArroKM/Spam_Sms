@@ -20,7 +20,6 @@ class Main:
 {k}[{c}5{k}] {u} SPAM {c}Redbus
 {k}[{c}6{k}] {u} SPAM {c}Dekoruma {r}[{k}WA{r}]
 {k}[{c}7{k}] {u} SPAM {c}Danacita
-{k}[{c}8{k}] {u} SPAM {c}Ajaib    {r}[{k}Email{r}]
 {k}[{c}0{k}] {r} Exit
 """)
 		pil = int(input(f'{p}xSECx {c}>> {k}'))
@@ -49,10 +48,6 @@ class Main:
 			nom = input(f'{r}\nEx : {o}89510512xxx\n{k}[*] {c}Nomor  : {k}')
 			jml = int(input(f'{k}[?] {c}Jumlah : {k}'))
 			Thread(dana(nom, jml)).start()
-		elif pil == 8:
-			mail = input(f'{r}\nEx : {o}Asecx@gmail.com\n{k}[*] {c}Email  : {k}')
-			jml = int(input(f'{k}[?] {c}Jumlah : {k}'))
-			Thread(mai(mail, jml)).start()
 		elif pil == 0:
 			sleep(1)
 			exit("")
@@ -73,6 +68,5 @@ if __name__ == '__main__':
 			from lib.e import *
 			from lib.f import *
 			from lib.g import *
-			from lib.h import *
 			Thread(target=Main).start()
 	except IOError: pass
